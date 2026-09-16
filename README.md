@@ -49,7 +49,7 @@ I am a Software Engineer focused on architecting resilient **Autonomous AI Agent
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🏢 <a href="https://github.com/TrebaDripat/rocket-people-hub">Rocket People Hub</a></h3>
+      <h3>🏢 Enterprise PeopleOps Core <em>(Private)</em></h3>
       <p><b>Enterprise HR & Operations Management System</b></p>
       <ul>
         <li>Full-cycle leave & policy engine, ledger, and approval hierarchies.</li>
@@ -93,7 +93,7 @@ I am a Software Engineer focused on architecting resilient **Autonomous AI Agent
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🧠 <a href="https://github.com/TrebaDripat/redrocket-clean">RedRocket Lead Engine</a></h3>
+      <h3>🧠 Autonomous Lead & SDR Engine <em>(Private)</em></h3>
       <p><b>LangGraph Clean Lead Enrichment & Drafting Pipeline</b></p>
       <ul>
         <li>ICP qualification via Apollo and deep enrichment via Perplexity.</li>
