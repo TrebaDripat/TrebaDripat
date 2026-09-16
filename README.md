@@ -15,7 +15,7 @@
 <h2 align="center">▸ QUEST LOG ◂</h2>
 
 <details>
-<summary>🔒 &nbsp;<b>LOCKED QUEST</b> · Enterprise PeopleOps Core &nbsp;<sub>(HR & operations platform)</sub></summary>
+<summary>🔒 &nbsp;<b>LOCKED QUEST</b> · Enterprise PeopleOps Core — <i>HR & operations platform</i></summary>
 <br/>
 
 > *A guild of 400+ automated tests guards this fortress.*
@@ -29,7 +29,7 @@
 </details>
 
 <details>
-<summary>🔒 &nbsp;<b>LOCKED QUEST</b> · Outbound AI Lead Engine &nbsp;<sub>(lead generation & outreach)</sub></summary>
+<summary>🔒 &nbsp;<b>LOCKED QUEST</b> · Outbound AI Lead Engine — <i>lead generation & outreach</i></summary>
 <br/>
 
 > *Speaks eight languages. Never sends twice.*
@@ -43,7 +43,7 @@
 </details>
 
 <details>
-<summary>🔒 &nbsp;<b>LOCKED QUEST</b> · Autonomous SDR Pipeline &nbsp;<sub>(LangGraph enrichment & drafting)</sub></summary>
+<summary>🔒 &nbsp;<b>LOCKED QUEST</b> · Autonomous SDR Pipeline — <i>LangGraph enrichment & drafting</i></summary>
 <br/>
 
 > *Two gates. A human holds both keys.*
@@ -57,7 +57,7 @@
 </details>
 
 <details>
-<summary>🔒 &nbsp;<b>LOCKED QUEST</b> · VisualOps &nbsp;<sub>(local-first computer vision)</sub></summary>
+<summary>🔒 &nbsp;<b>LOCKED QUEST</b> · VisualOps — <i>local-first computer vision</i></summary>
 <br/>
 
 > *The cameras see. The video never leaves the building.*
@@ -71,7 +71,7 @@
 </details>
 
 <details>
-<summary>🔒 &nbsp;<b>LOCKED QUEST</b> · 3D Elevator Configurator &nbsp;<sub>(real-time architectural web app)</sub></summary>
+<summary>🔒 &nbsp;<b>LOCKED QUEST</b> · 3D Elevator Configurator — <i>real-time architectural web app</i></summary>
 <br/>
 
 > *Pick your walls, floor, lights and mirrors. Ride.*
@@ -85,7 +85,7 @@
 </details>
 
 <details>
-<summary>🔒 &nbsp;<b>LOCKED QUEST</b> · Atelier Studio &nbsp;<sub>(design-agency landing)</sub></summary>
+<summary>🔒 &nbsp;<b>LOCKED QUEST</b> · Atelier Studio — <i>design-agency landing</i></summary>
 <br/>
 
 > *Warm tokens, custom type, no template in sight.*
