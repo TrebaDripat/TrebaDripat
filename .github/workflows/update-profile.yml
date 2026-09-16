@@ -24,8 +24,13 @@ jobs:
 
       - name: Build character sheet and world map
         env:
-          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
-        run: python scripts/build_assets.py
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+        run: |
+          if [ -z "$GITHUB_TOKEN" ]; then
+            echo "::warning::PROFILE_TOKEN secret is missing - the built-in token only sees this repo, so the screens are left untouched. See scripts/README.md."
+            exit 0
+          fi
+          python scripts/build_assets.py
 
       - name: Commit if changed
         run: |

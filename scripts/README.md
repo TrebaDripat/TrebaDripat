@@ -19,5 +19,6 @@ Commit XP and the world map read the default branch of **every repo the
 profile owns, private included**. The workflow's built-in `GITHUB_TOKEN`
 only sees this one repo, so add a repository secret `PROFILE_TOKEN`
 (fine-grained PAT, *All repositories*, permission *Contents: read* and
-*Metadata: read*). Without it the workflow still runs but only counts
-public repos.
+*Metadata: read*). Without it the workflow exits early with a warning and leaves the
+committed screens as they are (the built-in token would otherwise
+shrink the stats to public repos only).
