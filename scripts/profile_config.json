@@ -1,0 +1,38 @@
+{
+  "login": "TrebaDripat",
+  "hero_name": "NIKOS3RD",
+  "class": "AI SYSTEMS ENGINEER",
+  "location": "UKRAINE",
+  "dialogue": [
+    "HI. I'M NIKOS. I BUILD AUTONOMOUS AI AGENTS.",
+    "LANGGRAPH DAGS, HUMAN-IN-THE-LOOP, ANTI-HALLUCINATION EVALS.",
+    "ALSO: 3D WEB WITH THREE.JS AND LOCAL-FIRST COMPUTER VISION.",
+    "PRESS START TO EXPLORE MY WORLD..."
+  ],
+  "stats": {
+    "PYTHON": 9,
+    "TYPESCRIPT": 8,
+    "AI/LLM": 9,
+    "3D WEB": 7,
+    "INFRA": 7,
+    "CV": 6
+  },
+  "inventory": [
+    ["PY", "PYTHON"],
+    ["TS", "TYPESCRIPT"],
+    ["LG", "LANGGRAPH"],
+    ["MCP", "MCP"],
+    ["FA", "FASTAPI"],
+    ["NX", "NEXT.JS"],
+    ["R3F", "THREE/R3F"],
+    ["TW", "TAILWIND"],
+    ["PG", "POSTGRES"],
+    ["MG", "MONGODB"],
+    ["DK", "DOCKER"],
+    ["TF", "TERRAFORM"],
+    ["CV", "OPENCV"],
+    ["PW", "PLAYWRIGHT"],
+    ["GIT", "GIT"],
+    ["LNX", "LINUX"]
+  ]
+}
