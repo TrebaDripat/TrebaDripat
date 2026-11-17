@@ -1,0 +1,139 @@
+{
+  "atlas/privacy": {
+    "mentions": [
+      "harbor-finch",
+      "juniper-row"
+    ],
+    "official_domains": [
+      "harbor-finch"
+    ]
+  },
+  "beacon/privacy": {
+    "mentions": [
+      "alder-pike"
+    ],
+    "official_domains": []
+  },
+  "cobalt/privacy": {
+    "mentions": [
+      "harbor-finch",
+      "morrow-vale"
+    ],
+    "official_domains": [
+      "harbor-finch",
+      "morrow-vale"
+    ]
+  },
+  "atlas/mergers": {
+    "mentions": [
+      "alder-pike",
+      "morrow-vale"
+    ],
+    "official_domains": [
+      "alder-pike"
+    ]
+  },
+  "beacon/mergers": {
+    "mentions": [
+      "harbor-finch",
+      "morrow-vale"
+    ],
+    "official_domains": [
+      "morrow-vale"
+    ]
+  },
+  "cobalt/mergers": {
+    "mentions": [],
+    "official_domains": [
+      "juniper-row"
+    ]
+  },
+  "atlas/patents": {
+    "mentions": [
+      "juniper-row"
+    ],
+    "official_domains": [
+      "juniper-row"
+    ]
+  },
+  "beacon/patents": {
+    "mentions": [
+      "morrow-vale"
+    ],
+    "official_domains": []
+  },
+  "cobalt/patents": {
+    "mentions": [
+      "alder-pike",
+      "juniper-row"
+    ],
+    "official_domains": [
+      "alder-pike",
+      "juniper-row"
+    ]
+  },
+  "atlas/renewables": {
+    "mentions": [
+      "alder-pike",
+      "harbor-finch"
+    ],
+    "official_domains": [
+      "alder-pike",
+      "harbor-finch"
+    ]
+  },
+  "beacon/renewables": {
+    "mentions": [],
+    "official_domains": [
+      "harbor-finch"
+    ]
+  },
+  "cobalt/renewables": {
+    "mentions": [
+      "harbor-finch",
+      "morrow-vale"
+    ],
+    "official_domains": [
+      "harbor-finch"
+    ]
+  },
+  "atlas/trade": {
+    "mentions": [],
+    "official_domains": []
+  },
+  "beacon/trade": {
+    "mentions": [
+      "harbor-finch",
+      "juniper-row"
+    ],
+    "official_domains": [
+      "juniper-row"
+    ]
+  },
+  "cobalt/trade": {
+    "mentions": [
+      "alder-pike",
+      "morrow-vale"
+    ],
+    "official_domains": [
+      "morrow-vale"
+    ]
+  },
+  "atlas/breach": {
+    "mentions": [
+      "harbor-finch",
+      "juniper-row"
+    ],
+    "official_domains": [
+      "harbor-finch",
+      "juniper-row"
+    ]
+  },
+  "beacon/breach": {
+    "mentions": [
+      "alder-pike",
+      "morrow-vale"
+    ],
+    "official_domains": []
+  }
+}

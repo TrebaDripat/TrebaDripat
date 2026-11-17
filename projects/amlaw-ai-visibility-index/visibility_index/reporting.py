@@ -51,9 +51,8 @@ def render(report: dict) -> dict[str, bytes]:
         "",
         _markdown(report["dataset"]),
         "",
-        f"Analyzed {coverage['analyzed']} of {coverage['expected']} expected engine–prompt pairs. "
-        f"{coverage['budget_skipped']} supplied answers exceeded the remaining reservation budget. "
-        f"{coverage['missing']} pairs had no supplied answer.",
+        f"The input supplied {coverage['supplied']} of {coverage['expected']} expected engine–prompt pairs. "
+        f"The budget admitted {coverage['analyzed']} and excluded {coverage['budget_skipped']}.",
         "",
         f"Modeled spend was USD {budget['modeled_spend_usd']} against a USD {budget['limit_usd']} limit. "
         f"USD {budget['remaining_usd']} remained.",

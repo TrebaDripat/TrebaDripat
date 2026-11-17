@@ -1,0 +1,526 @@
+{
+  "schema_version": 1,
+  "dataset": "Fictional law firm survey · synthetic replay",
+  "source_sha256": {
+    "catalog.json": "40330a4f2e941482204589f62628e14be0c714c3b6eeabd232d5fe38f12bc012",
+    "answers.jsonl": "2fefc6e13a1b714b971929074eccc8a58c238f9e0e0840c90eeb5f53ff80cd8e"
+  },
+  "budget": {
+    "limit_usd": "0.025",
+    "modeled_spend_usd": "0.007461",
+    "remaining_usd": "0.017539"
+  },
+  "coverage": {
+    "expected": 18,
+    "supplied": 17,
+    "analyzed": 17,
+    "budget_skipped": 0,
+    "missing": 1
+  },
+  "engine_coverage": {
+    "atlas": {
+      "expected": 6,
+      "supplied": 6,
+      "analyzed": 6,
+      "budget_skipped": 0,
+      "missing": 0
+    },
+    "beacon": {
+      "expected": 6,
+      "supplied": 6,
+      "analyzed": 6,
+      "budget_skipped": 0,
+      "missing": 0
+    },
+    "cobalt": {
+      "expected": 6,
+      "supplied": 5,
+      "analyzed": 5,
+      "budget_skipped": 0,
+      "missing": 1
+    }
+  },
+  "firms": [
+    {
+      "firm": "morrow-vale",
+      "name": "Morrow Vale Legal",
+      "rank": 1,
+      "visibility_pct": "42.22",
+      "analyzed_answers": 17,
+      "mentioned": 7,
+      "officially_cited": 3,
+      "mentioned_and_cited": 3,
+      "pooled_mention_pct": "41.18",
+      "by_engine": {
+        "atlas": {
+          "answers": 6,
+          "mentioned": 1,
+          "officially_cited": 0,
+          "mentioned_and_cited": 0,
+          "mention_pct": "16.67"
+        },
+        "beacon": {
+          "answers": 6,
+          "mentioned": 3,
+          "officially_cited": 1,
+          "mentioned_and_cited": 1,
+          "mention_pct": "50.00"
+        },
+        "cobalt": {
+          "answers": 5,
+          "mentioned": 3,
+          "officially_cited": 2,
+          "mentioned_and_cited": 2,
+          "mention_pct": "60.00"
+        }
+      }
+    },
+    {
+      "firm": "harbor-finch",
+      "name": "Harbor & Finch",
+      "rank": 2,
+      "visibility_pct": "41.11",
+      "analyzed_answers": 17,
+      "mentioned": 7,
+      "officially_cited": 6,
+      "mentioned_and_cited": 5,
+      "pooled_mention_pct": "41.18",
+      "by_engine": {
+        "atlas": {
+          "answers": 6,
+          "mentioned": 3,
+          "officially_cited": 3,
+          "mentioned_and_cited": 3,
+          "mention_pct": "50.00"
+        },
+        "beacon": {
+          "answers": 6,
+          "mentioned": 2,
+          "officially_cited": 1,
+          "mentioned_and_cited": 0,
+          "mention_pct": "33.33"
+        },
+        "cobalt": {
+          "answers": 5,
+          "mentioned": 2,
+          "officially_cited": 2,
+          "mentioned_and_cited": 2,
+          "mention_pct": "40.00"
+        }
+      }
+    },
+    {
+      "firm": "alder-pike",
+      "name": "Alder Pike Law",
+      "rank": 3,
+      "visibility_pct": "35.56",
+      "analyzed_answers": 17,
+      "mentioned": 6,
+      "officially_cited": 3,
+      "mentioned_and_cited": 3,
+      "pooled_mention_pct": "35.29",
+      "by_engine": {
+        "atlas": {
+          "answers": 6,
+          "mentioned": 2,
+          "officially_cited": 2,
+          "mentioned_and_cited": 2,
+          "mention_pct": "33.33"
+        },
+        "beacon": {
+          "answers": 6,
+          "mentioned": 2,
+          "officially_cited": 0,
+          "mentioned_and_cited": 0,
+          "mention_pct": "33.33"
+        },
+        "cobalt": {
+          "answers": 5,
+          "mentioned": 2,
+          "officially_cited": 1,
+          "mentioned_and_cited": 1,
+          "mention_pct": "40.00"
+        }
+      }
+    },
+    {
+      "firm": "juniper-row",
+      "name": "Juniper Row LLP",
+      "rank": 4,
+      "visibility_pct": "28.89",
+      "analyzed_answers": 17,
+      "mentioned": 5,
+      "officially_cited": 5,
+      "mentioned_and_cited": 4,
+      "pooled_mention_pct": "29.41",
+      "by_engine": {
+        "atlas": {
+          "answers": 6,
+          "mentioned": 3,
+          "officially_cited": 2,
+          "mentioned_and_cited": 2,
+          "mention_pct": "50.00"
+        },
+        "beacon": {
+          "answers": 6,
+          "mentioned": 1,
+          "officially_cited": 1,
+          "mentioned_and_cited": 1,
+          "mention_pct": "16.67"
+        },
+        "cobalt": {
+          "answers": 5,
+          "mentioned": 1,
+          "officially_cited": 2,
+          "mentioned_and_cited": 1,
+          "mention_pct": "20.00"
+        }
+      }
+    }
+  ],
+  "observations": [
+    {
+      "input_line": 1,
+      "prompt": "privacy",
+      "engine": "atlas",
+      "reservation_usd": "0.00066",
+      "status": "analyzed",
+      "modeled_cost_usd": "0.000345",
+      "mentions": [
+        "harbor-finch",
+        "juniper-row"
+      ],
+      "citations": [
+        {
+          "url": "https://insights.harbor-finch.example/privacy",
+          "firm": "harbor-finch"
+        },
+        {
+          "url": "https://legal-desk.example/privacy",
+          "firm": null
+        }
+      ],
+      "remaining_usd": "0.024655"
+    },
+    {
+      "input_line": 2,
+      "prompt": "privacy",
+      "engine": "beacon",
+      "reservation_usd": "0.00038",
+      "status": "analyzed",
+      "modeled_cost_usd": "0.000164",
+      "mentions": [
+        "alder-pike"
+      ],
+      "citations": [
+        {
+          "url": "https://legal-desk.example/rankings/privacy",
+          "firm": null
+        }
+      ],
+      "remaining_usd": "0.024491"
+    },
+    {
+      "input_line": 3,
+      "prompt": "privacy",
+      "engine": "cobalt",
+      "reservation_usd": "0.00172",
+      "status": "analyzed",
+      "modeled_cost_usd": "0.000856",
+      "mentions": [
+        "harbor-finch",
+        "morrow-vale"
+      ],
+      "citations": [
+        {
+          "url": "https://harbor-finch.example/privacy",
+          "firm": "harbor-finch"
+        },
+        {
+          "url": "https://morrow-vale.example/services/privacy",
+          "firm": "morrow-vale"
+        }
+      ],
+      "remaining_usd": "0.023635"
+    },
+    {
+      "input_line": 4,
+      "prompt": "mergers",
+      "engine": "atlas",
+      "reservation_usd": "0.00062",
+      "status": "analyzed",
+      "modeled_cost_usd": "0.000314",
+      "mentions": [
+        "alder-pike",
+        "morrow-vale"
+      ],
+      "citations": [
+        {
+          "url": "https://alder-pike.example/deals",
+          "firm": "alder-pike"
+        },
+        {
+          "url": "https://morrow-vale.example.legal-desk.example/mergers",
+          "firm": null
+        }
+      ],
+      "remaining_usd": "0.023321"
+    },
+    {
+      "input_line": 5,
+      "prompt": "mergers",
+      "engine": "beacon",
+      "reservation_usd": "0.00039",
+      "status": "analyzed",
+      "modeled_cost_usd": "0.000222",
+      "mentions": [
+        "harbor-finch",
+        "morrow-vale"
+      ],
+      "citations": [
+        {
+          "url": "https://briefs.morrow-vale.example/mergers",
+          "firm": "morrow-vale"
+        }
+      ],
+      "remaining_usd": "0.023099"
+    },
+    {
+      "input_line": 6,
+      "prompt": "mergers",
+      "engine": "cobalt",
+      "reservation_usd": "0.00128",
+      "status": "analyzed",
+      "modeled_cost_usd": "0.000656",
+      "mentions": [],
+      "citations": [
+        {
+          "url": "https://juniper-row.example/mergers",
+          "firm": "juniper-row"
+        }
+      ],
+      "remaining_usd": "0.022443"
+    },
+    {
+      "input_line": 7,
+      "prompt": "patents",
+      "engine": "atlas",
+      "reservation_usd": "0.00073",
+      "status": "analyzed",
+      "modeled_cost_usd": "0.000346",
+      "mentions": [
+        "juniper-row"
+      ],
+      "citations": [
+        {
+          "url": "https://juniper-row.example/patents",
+          "firm": "juniper-row"
+        }
+      ],
+      "remaining_usd": "0.022097"
+    },
+    {
+      "input_line": 8,
+      "prompt": "patents",
+      "engine": "beacon",
+      "reservation_usd": "0.00033",
+      "status": "analyzed",
+      "modeled_cost_usd": "0.000138",
+      "mentions": [
+        "morrow-vale"
+      ],
+      "citations": [
+        {
+          "url": "https://practice-review.example/patents",
+          "firm": null
+        }
+      ],
+      "remaining_usd": "0.021959"
+    },
+    {
+      "input_line": 9,
+      "prompt": "patents",
+      "engine": "cobalt",
+      "reservation_usd": "0.00162",
+      "status": "analyzed",
+      "modeled_cost_usd": "0.000918",
+      "mentions": [
+        "alder-pike",
+        "juniper-row"
+      ],
+      "citations": [
+        {
+          "url": "https://juniper-row.example/patents",
+          "firm": "juniper-row"
+        },
+        {
+          "url": "https://news.alder-pike.example/patents",
+          "firm": "alder-pike"
+        }
+      ],
+      "remaining_usd": "0.021041"
+    },
+    {
+      "input_line": 10,
+      "prompt": "renewables",
+      "engine": "atlas",
+      "reservation_usd": "0.00089",
+      "status": "analyzed",
+      "modeled_cost_usd": "0.000494",
+      "mentions": [
+        "alder-pike",
+        "harbor-finch"
+      ],
+      "citations": [
+        {
+          "url": "https://alder-pike.example/energy",
+          "firm": "alder-pike"
+        },
+        {
+          "url": "https://harbor-finch.example/finance?topic=energy",
+          "firm": "harbor-finch"
+        }
+      ],
+      "remaining_usd": "0.020547"
+    },
+    {
+      "input_line": 11,
+      "prompt": "renewables",
+      "engine": "beacon",
+      "reservation_usd": "0.00033",
+      "status": "analyzed",
+      "modeled_cost_usd": "0.000142",
+      "mentions": [],
+      "citations": [
+        {
+          "url": "https://harbor-finch.example/energy",
+          "firm": "harbor-finch"
+        }
+      ],
+      "remaining_usd": "0.020405"
+    },
+    {
+      "input_line": 12,
+      "prompt": "renewables",
+      "engine": "cobalt",
+      "reservation_usd": "0.00146",
+      "status": "analyzed",
+      "modeled_cost_usd": "0.00083",
+      "mentions": [
+        "harbor-finch",
+        "morrow-vale"
+      ],
+      "citations": [
+        {
+          "url": "https://harbor-finch.example/finance",
+          "firm": "harbor-finch"
+        },
+        {
+          "url": "https://morrow-vale.example.legal-desk.example/energy",
+          "firm": null
+        }
+      ],
+      "remaining_usd": "0.019575"
+    },
+    {
+      "input_line": 13,
+      "prompt": "trade",
+      "engine": "atlas",
+      "reservation_usd": "0.00058",
+      "status": "analyzed",
+      "modeled_cost_usd": "0.000271",
+      "mentions": [],
+      "citations": [
+        {
+          "url": "https://legal-desk.example/trade",
+          "firm": null
+        }
+      ],
+      "remaining_usd": "0.019304"
+    },
+    {
+      "input_line": 14,
+      "prompt": "trade",
+      "engine": "beacon",
+      "reservation_usd": "0.00045",
+      "status": "analyzed",
+      "modeled_cost_usd": "0.000212",
+      "mentions": [
+        "harbor-finch",
+        "juniper-row"
+      ],
+      "citations": [
+        {
+          "url": "http://juniper-row.example/trade",
+          "firm": "juniper-row"
+        }
+      ],
+      "remaining_usd": "0.019092"
+    },
+    {
+      "input_line": 15,
+      "prompt": "trade",
+      "engine": "cobalt",
+      "reservation_usd": "0.00174",
+      "status": "analyzed",
+      "modeled_cost_usd": "0.00105",
+      "mentions": [
+        "alder-pike",
+        "morrow-vale"
+      ],
+      "citations": [
+        {
+          "url": "https://morrow-vale.example/trade",
+          "firm": "morrow-vale"
+        },
+        {
+          "url": "https://legal-desk.example/trade",
+          "firm": null
+        }
+      ],
+      "remaining_usd": "0.018042"
+    },
+    {
+      "input_line": 16,
+      "prompt": "breach",
+      "engine": "atlas",
+      "reservation_usd": "0.000655",
+      "status": "analyzed",
+      "modeled_cost_usd": "0.000352",
+      "mentions": [
+        "harbor-finch",
+        "juniper-row"
+      ],
+      "citations": [
+        {
+          "url": "https://harbor-finch.example/breach",
+          "firm": "harbor-finch"
+        },
+        {
+          "url": "https://juniper-row.example/breach",
+          "firm": "juniper-row"
+        }
+      ],
+      "remaining_usd": "0.01769"
+    },
+    {
+      "input_line": 17,
+      "prompt": "breach",
+      "engine": "beacon",
+      "reservation_usd": "0.000355",
+      "status": "analyzed",
+      "modeled_cost_usd": "0.000151",
+      "mentions": [
+        "alder-pike",
+        "morrow-vale"
+      ],
+      "citations": [
+        {
+          "url": "https://morrow-vale.example.newsroom.example/breach",
+          "firm": null
+        }
+      ],
+      "remaining_usd": "0.017539"
+    }
+  ]
+}

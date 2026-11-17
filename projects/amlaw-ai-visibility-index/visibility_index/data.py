@@ -258,7 +258,7 @@ def load_dataset(directory: Path) -> Dataset:
         raise DataError(f"catalog.json: {error}") from error
     answers = []
     observed = set()
-    for line, text in enumerate(read("answers.jsonl").splitlines(), start=1):
+    for line, text in enumerate(read("answers.jsonl").split("\n"), start=1):
         if not text.strip():
             continue
         try:
