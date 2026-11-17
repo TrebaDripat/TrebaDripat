@@ -1,0 +1,53 @@
+name: AmLaw visibility replay
+on:
+  pull_request:
+    paths:
+      - 'projects/amlaw-ai-visibility-index/**'
+      - '.github/workflows/amlaw-visibility.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'projects/amlaw-ai-visibility-index/**'
+      - '.github/workflows/amlaw-visibility.yml'
+permissions:
+  contents: read
+jobs:
+  replay:
+    name: Replay and audit (Python ${{ matrix.python }})
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.11', '3.14']
+    defaults:
+      run:
+        working-directory: projects/amlaw-ai-visibility-index
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Test attribution, budgeting, ranking and publication
+        run: python -m unittest discover -s tests -v
+      - name: Regenerate both reports and compare every file
+        run: |
+          python -m visibility_index --data examples/demo --budget-usd 0.025 --out "$RUNNER_TEMP/amlaw-reports/demo"
+          python -m visibility_index --data examples/demo --budget-usd 0.004 --out "$RUNNER_TEMP/amlaw-reports/budgeted"
+          diff -ru reports "$RUNNER_TEMP/amlaw-reports"
+      - name: Run the installed command outside the checkout
+        if: matrix.python == '3.14'
+        run: |
+          python -m pip wheel --no-deps --wheel-dir "$RUNNER_TEMP/amlaw-wheels" .
+          python -m venv "$RUNNER_TEMP/amlaw-venv"
+          "$RUNNER_TEMP/amlaw-venv/bin/python" -m pip install --no-index --no-deps "$RUNNER_TEMP"/amlaw-wheels/*.whl
+          survey="$PWD/examples/demo"
+          cd "$RUNNER_TEMP"
+          "$RUNNER_TEMP/amlaw-venv/bin/amlaw-index" --data "$survey" --budget-usd 0.025 --out amlaw-installed
+          diff -ru amlaw-reports/demo amlaw-installed
+      - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        if: matrix.python == '3.14'
+        with:
+          name: amlaw-replay-reports
+          path: ${{ runner.temp }}/amlaw-reports
+          if-no-files-found: error

@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "label": "Fictional law firm survey · synthetic replay",
+  "firms": [
+    {
+      "id": "harbor-finch",
+      "name": "Harbor & Finch",
+      "aliases": [
+        "Harbor and Finch",
+        "H&F Counsel"
+      ],
+      "domains": [
+        "harbor-finch.example"
+      ]
+    },
+    {
+      "id": "alder-pike",
+      "name": "Alder Pike Law",
+      "aliases": [
+        "Alder Pike"
+      ],
+      "domains": [
+        "alder-pike.example"
+      ]
+    },
+    {
+      "id": "juniper-row",
+      "name": "Juniper Row LLP",
+      "aliases": [
+        "Juniper Row"
+      ],
+      "domains": [
+        "juniper-row.example"
+      ]
+    },
+    {
+      "id": "morrow-vale",
+      "name": "Morrow Vale Legal",
+      "aliases": [
+        "Morrow Vale",
+        "MV Legal"
+      ],
+      "domains": [
+        "morrow-vale.example"
+      ]
+    }
+  ],
+  "engines": [
+    {
+      "id": "atlas",
+      "input_usd_per_million": "1.00",
+      "output_usd_per_million": "3.00"
+    },
+    {
+      "id": "beacon",
+      "input_usd_per_million": "0.50",
+      "output_usd_per_million": "2.00"
+    },
+    {
+      "id": "cobalt",
+      "input_usd_per_million": "2.00",
+      "output_usd_per_million": "6.00"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "privacy",
+      "text": "Which firms publish privacy compliance material?"
+    },
+    {
+      "id": "mergers",
+      "text": "Which firms discuss merger filings?"
+    },
+    {
+      "id": "patents",
+      "text": "Which firms provide a patent dispute practice overview?"
+    },
+    {
+      "id": "renewables",
+      "text": "Which firms publish renewable project finance updates?"
+    },
+    {
+      "id": "trade",
+      "text": "Which firms discuss customs and trade controls?"
+    },
+    {
+      "id": "breach",
+      "text": "Which firms publish incident response planning resources?"
+    }
+  ]
+}

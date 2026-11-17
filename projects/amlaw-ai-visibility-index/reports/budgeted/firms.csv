@@ -1,0 +1,5 @@
+rank,firm,name,visibility_pct,pooled_mention_pct,analyzed_answers,mentioned,officially_cited,mentioned_and_cited
+1,harbor-finch,Harbor & Finch,41.67,40.00,10,4,4,3
+1,morrow-vale,Morrow Vale Legal,41.67,40.00,10,4,2,2
+3,alder-pike,Alder Pike Law,25.00,30.00,10,3,2,2
+4,juniper-row,Juniper Row LLP,16.67,20.00,10,2,2,1
